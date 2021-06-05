@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   </head>
 
   <body>
@@ -16,10 +17,13 @@
     <nav>
       <ul class="nav-list">
         <li class="nav-list-item">
+           <%=link_to"Top",top_path%>
+        </li>
+        <li class="nav-list-item">
           <%=link_to "Tosolists",todolists_path%>
         </li>
         <li class="nav-list-item">
-           <%=link_to"nav-list-item",todolists_new_path%>
+           <%=link_to"New List",todolists_new_path%>
         </li>
       </ul>
     </nav>

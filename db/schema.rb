@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_03_070617) do
+ActiveRecord::Schema.define(version: 2021_06_05_065649) do
 
   create_table "lists", force: :cascade do |t|
     t.string "title"
     t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_id"
   end
 
 end
